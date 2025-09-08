@@ -1,3 +1,5 @@
+````bash
+cat << 'EOF' > README.md
 # 🚢 Titanic Survival Prediction App
 
 ![Titanic Hero](asset/hero.jpg)
@@ -36,25 +38,30 @@ A **machine learning-based Streamlit web application** to predict Titanic passen
 ## ⚙️ Quick Start
 
 ### 1️⃣ Clone the repository
-
 ```bash
 git clone https://github.com/Alan21303/titanic-end2end-ml.git
 cd titanic-end2end-ml
+````
 
 ### 2️⃣ Build Docker image
 
-docker run -p 8501:8501 titanic-app:latest
-
+```bash
+docker build -t titanic-app:latest .
+```
 
 ### 3️⃣ Run the container
 
+```bash
 docker run -p 8501:8501 titanic-app:latest
+```
 
+Open [http://localhost:8501](http://localhost:8501) to view the app.
 
-Open http://localhost:8501 to view the app.
+---
 
-### 📂 Project Structure
+## 📂 Project Structure
 
+```bash
 titanic-end2end-ml/
 │
 ├── asset/                   # Images for README & app
@@ -68,38 +75,44 @@ titanic-end2end-ml/
 ├── requirements.txt         # Python dependencies
 ├── streamlit_app.py         # Streamlit web app
 └── README.md                # Project documentation
+```
 
+---
 
-''''
+## 📈 How It Works
 
-### 📈 How It Works
+1. User inputs details on the Streamlit UI.
+2. ML model predicts survival probability.
+3. Results are shown interactively with clear success/failure messages.
 
+---
 
-User inputs details on the Streamlit UI.
+## 🚀 Tech Stack
 
-ML model predicts survival probability.
+- Python 3.10
+- Pandas, NumPy, Scikit-learn, Joblib
+- Streamlit for UI
+- Docker for containerization
 
-Results are shown interactively with clear success/failure messages.
+---
 
-### 🚀 Tech Stack
-Python 3.10
+## 🏗 Future Enhancements
 
-Pandas, NumPy, Scikit-learn, Joblib
+- Deploy on AWS / Heroku / Azure
+- Add historical dataset visualizations
+- Implement multiple model comparisons for accuracy
+- Enhance UI/UX with more interactivity
+  EOF
 
-Streamlit for UI
+```
 
-Docker for containerization
+---
 
-### 🏗 Future Enhancements
+### ✅ How to use:
 
-Deploy on AWS / Heroku / Azure
-
-Add historical dataset visualizations
-
-Implement multiple model comparisons for accuracy
-
-Enhance UI/UX with more interactivity
-EOF
-
+1. Open **PowerShell** or **Git Bash** in your project folder (`titanic-end2end-ml`).
+2. Copy and paste the above script and press Enter.
+3. It will **overwrite or create `README.md`** with the modern layout.
+4. Commit and push to GitHub:
 
 ```
