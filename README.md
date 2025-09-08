@@ -54,7 +54,7 @@ docker run -p 8501:8501 titanic-app:latest
 Open http://localhost:8501 to view the app.
 
 ### 📂 Project Structure
-
+'''
 titanic-end2end-ml/
 │
 ├── asset/                   # Images for README & app
@@ -68,6 +68,8 @@ titanic-end2end-ml/
 ├── requirements.txt         # Python dependencies
 ├── streamlit_app.py         # Streamlit web app
 └── README.md                # Project documentation
+
+'''
 
 
 ### 📈 How It Works
@@ -98,5 +100,6 @@ Implement multiple model comparisons for accuracy
 
 Enhance UI/UX with more interactivity
 EOF
+
 
 ```
