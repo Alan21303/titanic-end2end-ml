@@ -1,5 +1,3 @@
-````bash
-cat << 'EOF' > README.md
 # 🚢 Titanic Survival Prediction App
 
 ![Titanic Hero](asset/hero.jpg)
@@ -38,10 +36,11 @@ A **machine learning-based Streamlit web application** to predict Titanic passen
 ## ⚙️ Quick Start
 
 ### 1️⃣ Clone the repository
+
 ```bash
 git clone https://github.com/Alan21303/titanic-end2end-ml.git
 cd titanic-end2end-ml
-````
+```
 
 ### 2️⃣ Build Docker image
 
@@ -104,7 +103,7 @@ titanic-end2end-ml/
 - Enhance UI/UX with more interactivity
   EOF
 
-```
+````
 
 ---
 
@@ -115,4 +114,10 @@ titanic-end2end-ml/
 3. It will **overwrite or create `README.md`** with the modern layout.
 4. Commit and push to GitHub:
 
-```
+```bash
+git add README.md
+git commit -m "Update README with modern layout and images"
+git push
+````
+
+---
