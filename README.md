@@ -37,23 +37,22 @@ A **machine learning-based Streamlit web application** to predict Titanic passen
 
 ### 1️⃣ Clone the repository
 
-```bash
+````bash
 git clone https://github.com/Alan21303/titanic-end2end-ml.git
-cd titanic-end2end-ml
+cd titanic-end2end-ml```
+
 2️⃣ Build Docker image
-bash
-Copy code
-docker build -t titanic-app:latest .
+```bash
+docker build -t titanic-app:latest .```
+
 3️⃣ Run the container
-bash
-Copy code
+```bash
 docker run -p 8501:8501 titanic-app:latest
-Open http://localhost:8501 to view the app.
+Open http://localhost:8501 to view the app. ```
 
 
 📂 Project Structure
-graphql
-Copy code
+```bash
 titanic-end2end-ml/
 │
 ├── asset/                   # Images for README & app
@@ -67,7 +66,7 @@ titanic-end2end-ml/
 ├── requirements.txt         # Python dependencies
 ├── streamlit_app.py         # Streamlit web app
 └── README.md                # Project documentation
-
+````
 
 📈 How It Works
 User inputs details on the Streamlit UI.
@@ -75,7 +74,6 @@ User inputs details on the Streamlit UI.
 ML model predicts survival probability.
 
 Results are shown interactively with clear success/failure messages.
-
 
 🚀 Tech Stack
 Python 3.10
@@ -86,7 +84,6 @@ Streamlit for UI
 
 Docker for containerization
 
-
 🏗 Future Enhancements
 Deploy on AWS / Heroku / Azure
 
@@ -95,4 +92,7 @@ Add historical dataset visualizations
 Implement multiple model comparisons for accuracy
 
 Enhance UI/UX with more interactivity
+
+```
+
 ```
