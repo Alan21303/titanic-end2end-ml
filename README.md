@@ -39,7 +39,7 @@ A **machine learning-based Streamlit web application** to predict Titanic passen
 
 ```bash
 git clone https://github.com/Alan21303/titanic-end2end-ml.git
-cd titanic-end2end-ml
+cd titanic-end2end-ml '''
 
 ### 2️⃣ Build Docker image
 
@@ -54,7 +54,7 @@ docker run -p 8501:8501 titanic-app:latest
 Open http://localhost:8501 to view the app.
 
 ### 📂 Project Structure
-'''
+
 titanic-end2end-ml/
 │
 ├── asset/                   # Images for README & app
@@ -69,7 +69,6 @@ titanic-end2end-ml/
 ├── streamlit_app.py         # Streamlit web app
 └── README.md                # Project documentation
 
-'''
 
 
 ### 📈 How It Works
