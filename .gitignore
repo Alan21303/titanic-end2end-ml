@@ -1,0 +1,44 @@
+# Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+.ENV/
+*.env
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# VS Code settings
+.vscode/
+
+# Cache and logs
+*.log
+*.pot
+*.pyc
+*.pyo
+*.pyd
+*.sqlite3
+.DS_Store
+
+# Build & dist
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Coverage
+htmlcov/
+.tox/
+.coverage
+.pytest_cache/
+.mypy_cache/
