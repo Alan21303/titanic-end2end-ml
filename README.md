@@ -33,60 +33,46 @@ A **machine learning-based Streamlit web application** to predict Titanic passen
 
 ---
 
-⚙️ Quick Start
-1️⃣ Clone the Repository
+## ⚙️ Quick Start
 
-Run the following commands in your terminal:
+### 1️⃣ Clone the repository
 
+````bash
 git clone https://github.com/Alan21303/titanic-end2end-ml.git
-cd titanic-end2end-ml
+cd titanic-end2end-ml ```bash
 
-2️⃣ Build Docker Image
-
-Make sure you have Docker installed. Then build the image:
-
-docker build -t titanic-app:latest .
-
-3️⃣ Run the Container
-
-Start the Docker container to launch the app:
+### 2️⃣ Build Docker image
 
 docker run -p 8501:8501 titanic-app:latest
 
-After running, open your browser and go to:
-http://localhost:8501
 
-📂 Project Structure
+### 3️⃣ Run the container
+
+docker run -p 8501:8501 titanic-app:latest
+
+
+Open http://localhost:8501 to view the app.
+
+### 📂 Project Structure
+
 titanic-end2end-ml/
 │
-├── asset/ # Images for README & app
-│ ├── hero.jpg # Banner image
-│ └── image.png # Streamlit interface screenshot
-├── data/ # Raw & processed datasets
-├── model/ # Trained ML model
-├── notebooks/ # Jupyter notebooks: EDA & training
-├── src/ # Python source code
-├── Dockerfile # Docker config
-├── requirements.txt # Python dependencies
-├── streamlit_app.py # Streamlit web app
-└── README.md # Project documentation
+├── asset/                   # Images for README & app
+│   ├── hero.jpg             # Banner image
+│   └── image.png            # Streamlit interface screenshot
+├── data/                    # Raw & processed datasets
+├── model/                   # Trained ML model
+├── notebooks/               # Jupyter notebooks: EDA & training
+├── src/                     # Python source code
+├── Dockerfile               # Docker config
+├── requirements.txt         # Python dependencies
+├── streamlit_app.py         # Streamlit web app
+└── README.md                # Project documentation
 
-4️⃣ Install Python Dependencies (Optional)
 
-If you want to run the app without Docker, first create a virtual environment and install dependencies:
-
-python -m venv venv
-.\venv\Scripts\activate # Windows
-
-# source venv/bin/activate # macOS/Linux
-
-pip install -r requirements.txt
-
-Then run the Streamlit app:
-
-streamlit run streamlit_app.py
 
 ### 📈 How It Works
+
 
 User inputs details on the Streamlit UI.
 
@@ -95,7 +81,6 @@ ML model predicts survival probability.
 Results are shown interactively with clear success/failure messages.
 
 ### 🚀 Tech Stack
-
 Python 3.10
 
 Pandas, NumPy, Scikit-learn, Joblib
@@ -115,6 +100,5 @@ Implement multiple model comparisons for accuracy
 Enhance UI/UX with more interactivity
 EOF
 
-```
 
-```
+````
